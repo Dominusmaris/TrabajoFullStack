@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
-
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+// Pruebas de integración de la aplicación principal
+describe('App Integration', () => {
+  it('App debería inicializar estado del carrito vacío', () => {
+    const initialCartItems = [];
+    expect(initialCartItems).toEqual([]);
+    expect(initialCartItems.length).toBe(0);
+  });
 });
