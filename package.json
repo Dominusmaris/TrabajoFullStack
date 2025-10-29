@@ -36,12 +36,26 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-react": "^7.28.5",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "jasmine": "^5.12.0",
     "jasmine-core": "^5.12.0",
     "karma": "^6.4.4",
+    "karma-babel-preprocessor": "^8.0.2",
     "karma-chrome-launcher": "^3.2.0",
-    "karma-jasmine": "^5.1.0"
+    "karma-cli": "^2.0.0",
+    "karma-coverage": "^2.2.1",
+    "karma-coverage-istanbul-instrumenter": "^1.0.4",
+    "karma-coverage-istanbul-reporter": "^3.0.3",
+    "karma-jasmine": "^5.1.0",
+    "karma-webpack": "^5.0.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.102.1"
   }
 }

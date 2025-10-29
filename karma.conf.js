@@ -1,20 +1,33 @@
 module.exports = function(config) {
   config.set({
     frameworks: ['jasmine'],
+
     files: [
-      'src/**/*.js',
-      'src/**/*.test.js'
+      'src/business-logic.js',
+      'src/frontend-logic.spec.js'
     ],
-    browsers: ['ChromeHeadless'],
-    singleRun: true,
+
+    browsers: ['Chrome'],
+    singleRun: false,
+    autoWatch: true,
+
     reporters: ['progress', 'coverage'],
+
     preprocessors: {
-      'src/**/*.js': ['coverage']
+      'src/business-logic.js': ['coverage']
     },
+
     coverageReporter: {
       type: 'html',
-      dir: 'coverage/'
+      dir: 'karma-coverage/'
     },
-    concurrency: 2
+
+    port: 9876,
+    colors: true,
+    logLevel: config.LOG_INFO,
+
+    client: {
+      clearContext: false
+    }
   });
 };
